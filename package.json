@@ -1,0 +1,16 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bombadillo/github-release-commit-highlighter"
+  },
+  "devDependencies": {
+    "coffee-script": "1.12.7",
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha",
+    "brewCoffee": "coffee -o dist/ -c src/",
+    "hotCoffee": "coffee -o dist/ -cw src/",
+    "hotTests": "coffee -cwo spec/ spec/"
+  }
+}
