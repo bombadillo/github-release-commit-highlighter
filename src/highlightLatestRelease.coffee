@@ -39,7 +39,9 @@ highlightCommit = (commitRow) =>
     """
   commitLinksEl.append latestReleaseLabel
 
+releasesUrl = document.location.href.replace 'commits/master', 'releases'
+
 oReq = new XMLHttpRequest()
-oReq.addEventListener "load", reqListener
-oReq.open "GET", "https://github.com/arnoldclark/data-services-sales-customer-checker-ui/releases"
+oReq.addEventListener 'load', reqListener
+oReq.open 'GET', releasesUrl
 oReq.send();
